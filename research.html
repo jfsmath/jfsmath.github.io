@@ -71,7 +71,8 @@
 								</ul>
 								
 							</p>
-
+						
+						<div class = "row">
 							<h3>Optimal Transport</h3>
 							<p>The Gromov-Wasserstein (GW) distance is a mathematical framework 
 								for comparing two metric measure spaces by aligning their intrinsic 
@@ -81,19 +82,31 @@
 								Still, it has been observed that the GW distance is inherently sensitive to outlier noise 
 								and cannot accommodate partial matching. In a recent preprint with T. Needham et al., 
 								we study the approximate metric properties when one relaxes the marginal matching 
+								\begin{equation}
+								\mathcal{D}_{\epsilon,p}(X,Y)^p:= \inf_{\pi \in \mathcal{P}(X\times Y), \pi_X \sim_{\epsilon} \mu_X, \pi_Y \sim_{\epsilon} \mu_Y} 
+								\mathbb{E}_{\pi\otimes \pi}[|d_X - d_Y|^p]
+								\end{equation}
 								and the stability of these approximations against empirical contamination.
 							</p>
 
+						</div>
+
+						<div class = "row">
 							<h3>Frames in Banach Spaces</h3>
 							<p>
 								A problem posed by H. Feichtinger (and subsequently by C. Heil and D. Larson) 
 								asks whether a positive-definite integral operator with \(\mathcal{M}_{1}\) (Feichtinger algebra) kernel admits a rank-one decomposition series 
 								that is also strongly square-summable in \(\mathcal{M}_{1}\), i.e., 
-								\(T = \sum_{k=1}^{\infty} f_k^*\otimes f_k\) with \( \sum_{k=1}^\infty \|f_k\|_{\mathcal{M}_1}^2 < \infty \).
+								\begin{equation}
+								T = \sum_{k=1}^{\infty} f_k^*\otimes f_k \quad \text{with} \quad \sum_{k=1}^\infty \|f_k\|_{\mathcal{M}_1}^2 < \infty
+								\end{equation}
 								Intuitively, one can think of it as a version of Mercer's Theorem, but in \(L_1\). 
 								One can formulate the finite-dimensional variant of the problem in terms of optimal matrix factorization in \(\ell_1^n\). In a recent preprint with R. Balan, 
 								complemented by a concurrent result by Bandeira-Mixon-Steinerberger, we showed that the answer is no in general, and we studied special cases when a desired factorization is possible. 
 							</p>
+						</div>
+							
+							
 						
 					</section>
 
