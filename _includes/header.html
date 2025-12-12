@@ -1,25 +1,18 @@
 <header id="header">
   <div class="inner">
-
-    <!-- Avatar -->
-    <a href="{{ '/index.html' | relative_url }}" class="image avatar">
+    <a href="{{ '/' | absolute_url }}" class="image avatar">
       <img src="{{ '/images/avatar.jpg' | relative_url }}" alt="Avatar" />
     </a>
 
-    <!-- Name -->
     <h1><strong>Fushuai Jiang, PhD</strong></h1>
-    <br />
 
-    <!-- Navigation -->
+    <!-- navigation -->
     <nav>
-      <ul>
-        <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
-        <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
-        <li><a href="{{ '/teaching.html' | relative_url }}">Teaching</a></li>
-        <li><a href="{{ '/CV.html' | relative_url }}">CV</a></li>
-      </ul>
+      <h3><a href="{{ '/index.html' | relative_url }}">Home</a> </h3>
+      <h3><a href="{{ '/research.html' | relative_url }}">Research</a></h3>
+      <h3><a href="{{ '/publications.html' | relative_url }}">Publications</a> </h3>
+      <h3><a href="{{ '/teaching.html' | relative_url }}">Teaching</a></h3>
+      <h3><a href="{{ '/CV.html' | relative_url }}">CV</a></h3>
     </nav>
-
   </div>
 </header>
