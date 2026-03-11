@@ -30,13 +30,17 @@ title: "Research"
 							<h1>Research<br/></h1>
 						</header>
 						
-						<p>My research area is in real and functional analysis and their connection to machine learning. 
-							In the broadest terms, my research focuses on making optimal decisions from limited information. 
+						<p> In the broadest terms, my research focuses on making optimal decisions with limited resources. 
+							Mathematically, they mostly fall into the category of extension and approximation problems, 
+							and I approach them from the point of view of real and harmonic analysis. 
 							Here are some examples of questions that are interesting to me:</p> 
 							<ul>
-								<li>How can we efficiently approximate a function or a manifold from a finite set of data points?</li>
-								<li>How can we compare two datasets that are defined on different spaces?</li>
-								<li>How can we recover a corrupted dataset as faithfully as possible?</li>
+								<li>How can we efficiently approximate a function or a manifold from a finite set of data points?
+								What if there are additional constraints?</li>
+								<li>How can we compare two datasets that are defined on different spaces?
+								What if we are allowed to make a small amount of error?</li>
+								<li>When can we effectively approximate a complicated (infinite-dimensional) operator
+								using simple building blocks (rank-ones)?</li>
 							</ul>
 						Below, you can find a set of evolving tools I have used in my work, roughly organized into three boxes.
 						</p>
@@ -53,7 +57,7 @@ title: "Research"
 							<p>
 								At the basic level, Whitney Problems 
 								ask for efficient methods to fit a smooth function to random data points 
-								while minimizing some norms or energies and obeying certain constraints (e.g. nonnegativity, convexity).
+								while minimizing some norms or energies and obeying certain constraints (e.g., nonnegativity, convexity).
 								Here are two sample flavors: 
 								<ul>
 									<li><strong>Problem 1:</strong> Given a finite set of points \(E \subset \mathbb{R}^n\) and a function \(f : E \to \mathbb{R}\), how can we construct a 
@@ -93,8 +97,10 @@ title: "Research"
 								T = \sum_{k=1}^{\infty} f_k^*\otimes f_k \quad \text{with} \quad \sum_{k=1}^\infty \|f_k\|_{\mathcal{M}_1}^2 < \infty
 								\end{equation}
 								Intuitively, one can think of it as a version of Mercer's Theorem, but in \(L_1\). 
-								One can formulate the finite-dimensional variant of the problem in terms of optimal matrix factorization in \(\ell_1^n\). In a recent preprint with R. Balan, 
-								complemented by a concurrent result by Bandeira-Mixon-Steinerberger, we showed that the answer is no in general, and we studied special cases when a desired factorization is possible. 
+								One can formulate the finite-dimensional variant of the problem in terms of optimal matrix factorization in \(\ell_1^n\). 
+									In a recent preprint with R. Balan, 
+								complemented by a concurrent result by Bandeira-Mixon-Steinerberger, 
+									we showed that the answer is no in general, and we studied special cases when a desired factorization is possible. 
 							</p>
 						</div>
 							
