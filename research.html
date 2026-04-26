@@ -33,16 +33,9 @@ title: "Research"
 						<p> In the broadest terms, my research focuses on making optimal decisions with limited resources. 
 							Mathematically, they mostly fall into the category of extension and approximation problems, 
 							and I approach them from the point of view of real and harmonic analysis. 
-							Here are some examples of questions that are interesting to me:</p> 
-							<ul>
-								<li>How can we efficiently approximate a function or a manifold from a finite set of data points?
-								What if there are additional constraints?</li>
-								<li>How can we compare two datasets that are defined on different spaces?
-								What if we are allowed to make a small amount of error?</li>
-								<li>When can we effectively approximate a complicated (infinite-dimensional) operator
-								using simple building blocks (rank-ones)?</li>
-							</ul>
-						Below, you can find a set of evolving tools I have used in my work, roughly organized into three boxes.
+							
+							
+							Below are some of the problems that I work on.
 						</p>
 						<!-- <ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
@@ -56,17 +49,46 @@ title: "Research"
 							<h3>Whitney Extension Theory</h3>
 							<p>
 								At the basic level, Whitney Problems 
-								ask for efficient methods to fit a smooth function to random data points 
-								while minimizing some norms or energies and obeying certain constraints (e.g., nonnegativity, convexity).
+								ask for efficient methods to fit a smooth function to unstructured data points 
+								(i.e., no asumptions on the distribution or geometry of the data)
+								while minimizing some norms or energies and obeying certain constraints 
+								(e.g., nonnegativity, convexity).
 								Here are two sample flavors: 
 								<ul>
-									<li><strong>Problem 1:</strong> Given a finite set of points \(E \subset \mathbb{R}^n\) and a function \(f : E \to \mathbb{R}\), how can we construct a 
-										<i>nonnegative</i> smooth function that interpolates these points while minimizing the \(C^m\) or Sobolev \(L^m_p\) norm?</li>
+									<li><strong>Problem 1:</strong> Given a finite set of points \(E \subset \mathbb{R}^n\) 
+										and a function \(f : E \to \mathbb{R}\), how can we construct a 
+										<i>nonnegative</i> smooth function that interpolates these points 
+										while minimizing the \(C^m\) or Sobolev \(L^m_p\) norm?</li>
 									<li><strong>Problem 2:</strong> How can we fit a low-dimensional manifold \(\Sigma\) to a pointcloud \(E\subset \mathbb{R}^n\) 
 										with optimal geometric properties, i.e., \(\mathrm{curv}(\Sigma)\) as small as possible?</li>
 								</ul>
 								
 							</p>
+
+							<div class = "row">
+							<h3>\(L_p\) Localization</h3>
+							<p>
+								A problem posed by H. Feichtinger (and subsequently by C. Heil and D. Larson) 
+								asks whether a positive-definite integral operator with 
+								\(\mathcal{M}_{1,1}\) (Feichtinger algebra) kernel admits a rank-one decomposition series 
+								that is also strongly square-summable in \(\mathcal{M}_{1}\), i.e., 
+								\begin{equation}
+								T = \sum_{k=1}^{\infty} f_k^*\otimes f_k \quad \text{with} 
+								\quad \sum_{k=1}^\infty \|f_k\|_{\mathcal{M}_1}^2 < \infty.
+								\end{equation}
+								Intuitively, one can think of it as a version of Mercer's Theorem, but in \(L_1\). 
+								One can formulate the finite-dimensional variant of the problem 
+								in terms of optimal matrix factorization in \(\ell_1^n\). 
+								In a recent preprint with R. Balan, 
+								complemented by a concurrent result by Bandeira-Mixon-Steinerberger, 
+								we showed that the answer is no in general, 
+								and we continue to study interesting cases when a desired factorization is possible.
+								The infinite-dimensional problem is intimately related to nuclear and 2-summing operators,
+								and more generally to the geometry of Banach spaces.
+
+							</p>
+						</div>
+							
 						
 						<div class = "row">
 							<h3>Optimal Transport</h3>
@@ -87,23 +109,7 @@ title: "Research"
 
 						</div>
 
-						<div class = "row">
-							<h3>Frames in Banach Spaces</h3>
-							<p>
-								A problem posed by H. Feichtinger (and subsequently by C. Heil and D. Larson) 
-								asks whether a positive-definite integral operator with \(\mathcal{M}_{1}\) (Feichtinger algebra) kernel admits a rank-one decomposition series 
-								that is also strongly square-summable in \(\mathcal{M}_{1}\), i.e., 
-								\begin{equation}
-								T = \sum_{k=1}^{\infty} f_k^*\otimes f_k \quad \text{with} \quad \sum_{k=1}^\infty \|f_k\|_{\mathcal{M}_1}^2 < \infty
-								\end{equation}
-								Intuitively, one can think of it as a version of Mercer's Theorem, but in \(L_1\). 
-								One can formulate the finite-dimensional variant of the problem in terms of optimal matrix factorization in \(\ell_1^n\). 
-									In a recent preprint with R. Balan, 
-								complemented by a concurrent result by Bandeira-Mixon-Steinerberger, 
-									we showed that the answer is no in general, and we studied special cases when a desired factorization is possible. 
-							</p>
-						</div>
-							
+						
 							
 						
 					</section>
