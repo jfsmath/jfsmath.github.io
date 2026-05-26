@@ -1,5 +1,6 @@
 ---
-title: "As a Human Being"
+title: "Home"
+layout: default
 ---
 
 <!DOCTYPE HTML>
@@ -10,45 +11,57 @@ title: "As a Human Being"
 -->
 <html>
 	<head>
-		<title>Jiang - As a Human Being</title>
+		<title>Black Jiang</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 	</head>
-
 
 
 	<body class="is-preload">
 
 		<!-- Header -->
-		
+		{% include header.html %}
+
 		<!-- Main -->
 			<div id="main">
 
-            
-            <p>I have two Siberian huskies, and I love taking them on hikes in Hong Kong.</p>
-            <article class="col-6 col-12-xsmall work-item">
-								<a">
-									<img src="images\boys.jpg" alt="" style="width: 100%;" />
+				<!-- One -->
+					<section id="biography">
+						<header class="major">
+							<h2>Me as a Human Being<br /></h2>
+						</header>
+						
+						
+						<p> 
+                            <a>
+									<img src="boys.jpg" alt="" style="width: 100%;" />
 								</a>
 								<h3>Matching Networks and Pointclouds</h3>
-								<p>The Gromov-Wasserstein (GW) distance is a powerful tool from optimal transport 
-									for comparing datasets across different metric spaces, 
-									widely used in network analysis and geometry processing. 
-									However, GW is sensitive to outliers and cannot handle partial matching. 
-									We study a relaxed version of GW and analyze its geometric properties. 
-									Building on this, we introduce a new family of robust distances that overcome GW's limitations
-									and offer improved robustness to noise and incomplete data.
-									Picture: GW distance between two sets of circles and ellipses.
+								<p>I have two Siberian huskies, and I love to take them on hikes and camping trips.
 								</p>
-		</article>
+						</p> 
 
-					
+
+						<p> Prior to joining CityUHK, I was a Postdoctoral Researcher affiliated with 
+							the Norbert Wiener Center for Harmonic Analysis and Applications at the University of Maryland, 
+							under the supervision of <a href = "https://www.math.umd.edu/~rvbalan/">Radu Balan</a> 
+							and
+							<a href="https://www.math.umd.edu/~czaja/">Wojciech Czaja</a>. 
+							I also did a one-semester postdoctoral residency at 
+							the Institute for Computational and Experimental Research in Mathematics (ICERM) at Brown University. 
+							I completed my Ph.D. in mathematics in 2022 at the University of California, Davis, under the supervision of 
+							<a href="https://www.math.ucdavis.edu/~kluli/">Kevin Luli</a>. My disseration was on Whitney extension theory with convex constraints.
+						</p>
+
+						
+						<!-- <ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul> -->
+					</section>
+
 				
-					
-				
-					
 
 			</div>
 
@@ -62,7 +75,9 @@ title: "As a Human Being"
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+			
 
 	</body>
+
+
 </html>
